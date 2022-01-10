@@ -33,8 +33,8 @@ const bulletContainer = {
   left: '50%',
   bottom: '15px'
 };
-const bulletSize = 15;
-const bulletMargin = 3;
+const bulletSize = 20;
+const bulletMargin = 5;
 const basicBullet = {
   display: 'inline-block',
   cursor: 'pointer',
@@ -56,7 +56,7 @@ export default {
   NavLeft: { ...basic, ...basicNav, left: '30px', marginTop: '-25px' } as React.CSSProperties,
   NavRight: { ...basic, ...basicNav, right: '30px', marginTop: '-25px' } as React.CSSProperties,
   BulletNormal: { ...basic, ...basicBullet } as React.CSSProperties,
-  BulletActive: { ...basic, ...basicBullet, background: '#FFF' } as React.CSSProperties,
+  BulletActive: { ...basic, ...basicBullet, background: '#FFC501' } as React.CSSProperties,
 
   getRootContainer: (width: number | string, height: number | string, backgroundColor: string): React.CSSProperties =>
     ({ ...basic, overflow: 'hidden', width, height, backgroundColor } as React.CSSProperties),
